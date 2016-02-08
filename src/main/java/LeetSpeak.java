@@ -6,6 +6,8 @@ public class LeetSpeak {
   }
 
   public static String leetSpeakTranslator(String userString) {
-    return userString.replaceAll("e", "3");
+   userString = userString.replaceAll("e", "3");
+   userString = userString.replaceAll("o", "0");
+   return userString;
   }
 }
