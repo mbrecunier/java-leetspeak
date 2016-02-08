@@ -15,8 +15,14 @@ public class LeetSpeakTest {
   }
 
   @Test
-  public void leetSpeakTranslator_replacesEveryIInAStringWithA0_wordChanges() {
+  public void leetSpeakTranslator_replacesEveryOInAStringWithA0_wordChanges() {
     LeetSpeak testLeetSpeak = new LeetSpeak();
     assertEquals("b00 b00", testLeetSpeak.leetSpeakTranslator("boo boo"));
+  }
+
+  @Test
+  public void leetSpeakTranslator_replacesEveryIInAStringWithA1_wordChanges() {
+    LeetSpeak testLeetSpeak = new LeetSpeak();
+    assertEquals("1 lik3 1k3", testLeetSpeak.leetSpeakTranslator("I like Ike"));
   }
 }
