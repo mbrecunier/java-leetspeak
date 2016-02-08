@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LeetSpeakTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-02-08T22:05:31" hostname="epicodus-68.local" time="0.001">
+<testsuite name="LeetSpeakTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-02-08T22:18:53" hostname="epicodus-68.local" time="0.002">
   <properties/>
   <testcase name="leetSpeakTranslator_returnsAsStrngAsIsWhenNoLeetspeakIsPresent_wordDoesntChange" classname="LeetSpeakTest" time="0.001"/>
+  <testcase name="leetSpeakTranslator_replacesEveryEWithA3_wordChanges" classname="LeetSpeakTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
