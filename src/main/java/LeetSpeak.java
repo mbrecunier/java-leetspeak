@@ -7,7 +7,9 @@ public class LeetSpeak {
 
   public static String leetSpeakTranslator(String userString) {
    userString = userString.replaceAll("e", "3");
+   userString = userString.replaceAll("E", "3");
    userString = userString.replaceAll("o", "0");
+   userString = userString.replaceAll("O", "0");
    userString = userString.replaceAll("I", "1");
    String[] userArray = userString.split(" ");
    for(Integer i=0; i< userArray.length; i++) {
