@@ -31,4 +31,10 @@ public class LeetSpeakTest {
     LeetSpeak testLeetSpeak = new LeetSpeak();
     assertEquals("r0z3z ar3 r3d", testLeetSpeak.leetSpeakTranslator("roses are red"));
   }
+
+  @Test
+  public void leetSpeakTranslator_doesNotReplaceSWhenFirstLetter_wordChanges() {
+    LeetSpeak testLeetSpeak = new LeetSpeak();
+    assertEquals("Suzi3 sunzhin3", testLeetSpeak.leetSpeakTranslator("Susie sunshine"));
+  }
 }
