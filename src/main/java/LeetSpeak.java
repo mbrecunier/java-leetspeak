@@ -35,14 +35,17 @@ public class LeetSpeak {
    userString = userString.replaceAll("I", "1");
    String[] userArray = userString.split(" ");
    for(Integer i=0; i< userArray.length; i++) {
-     userArray[i] = userArray[i].replaceAll("s", "z");
-     userArray[i] = userArray[i].replaceAll("S", "Z");
-     if(userArray[i].startsWith("Z")) {
-         userArray[i] = userArray[i].replaceFirst("Z", "S");
-       } else if(userArray[i].startsWith("z")) {
-         userArray[i] = userArray[i].replaceFirst("z", "s");
-       }
+     if((userArray[i].startsWith("S")) || (userArray[i].startsWith("s"))) {
+       userArray[i] = userArray[i].replaceAll("s", "z");
+       userArray[i] = userArray[i].replaceAll("S", "Z");
+       userArray[i] = userArray[i].replaceFirst("Z", "S");
+       userArray[i] = userArray[i].replaceFirst("z", "s");
+     } else {
+       userArray[i] = userArray[i].replaceAll("s", "z");
+       userArray[i] = userArray[i].replaceAll("S", "Z");
      }
+
+    }
      String translatedString = String.join(" ", userArray);
      return translatedString;
    }
