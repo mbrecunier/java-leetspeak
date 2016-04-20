@@ -6,17 +6,13 @@
 
 ## Description
 
-Leetspeak uses an alternative alphabet of numbers and symbols to replace various letters in words. For example, "leet" becomes "1337" and "Epicodus" might become "3p1c0duz".
+Recreate a Ping-Pong application using BDD and Gradle Test . It should have a method that accepts a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:
 
-    The letter "e" should be replaced with "3".
-    The letter "o" should be replaced with "0".
-    The capital letter (not the lower case), "I", should be replaced with "1".
-    All instances of "s" should be replaced with "z" UNLESS it is the first letter of the word.
+    Numbers divisible by 3 are replaced with "ping"
+    Numbers divisible by 5 are replaced with "pong"
+    Numbers divisible by 15 are replaced with "pingpong"
 
-Example:
-
-In: "Don't you love these 'String' exercises? I do!"
-Out: "D0n't y0u l0v3 th3z3 'Str1ng' 3x3rciz3z? 1 d0!"
+The method should return an ArrayList (i.e app.pingPong(7) returns [1, 2, "ping", 4, "pong", "ping", 7]).
 
 ## Setup/Installation Requirements
 
